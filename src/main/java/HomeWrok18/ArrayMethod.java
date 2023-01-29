@@ -12,20 +12,20 @@ public class ArrayMethod {
                 array[i] += array[j]  ;
 
             }
-            System.out.println(array[i]/array.length);
+            System.out.println("General arithmetic array = "+array[i]/array.length);
         }
 
     }
-    public  void checkArray(int[][] sqArray) {
+    public int[][] checkArray(int[][] sqArray) {
         this.sqArray = sqArray;
         this.row = this.sqArray.length;
         this.column = this.sqArray[0].length;
         if(this.row == this.column){
-            System.out.println("ok");
+            System.out.println("Square array");
         }else{
-            System.out.println("no");
+            System.out.println("Array is not square");
         }
-
+       return sqArray;
     }
 
 
